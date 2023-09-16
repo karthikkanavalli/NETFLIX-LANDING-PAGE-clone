@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "poppins",sans-serif;
+    background-color: black;
+    color: white;
+    /* background-color: rgb(0, 0, 0); */
+
+}
+.container{
+    width: 100%;
+    height: 100%; 
+    
+    /* /* background: url(background.jpg); * */
+}
+nav{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    padding: 1rem 10rem 0rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* margin: 1rem; */
+}
+.logo > img{
+    width: 11rem;
+    /* height: 103%; */
+}
+.nav-left{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    /* height: %; */
+    /* border: 2px solid white; */
+    /* background-color: rgb(169, 147, 147); */
+}
+.nav-left > .language{
+ display: flex;
+ justify-content: space-between;
+ font-size: 1rem;
+ color: white;
+ border: 1px solid white;
+ border-radius: 8px;
+ padding: 0.7rem;
+ /* justify-content: space-between; */
+}
+.language > .fa{
+    display: flex;
+}
+.language-dropdoen{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding-left: 0.6rem;
+    padding-right: 3rem;
+    /* width: 8rem; */
+    /* height: %; */
+}
+/* .sign-btn{
+    width: 10rem;
+    height: 10rem;
+    margin-left: 0.7rem;
+    margin-top: 7.7rem;
+    padding: 1rem;
+} */
+.sign-btn > button{
+    font-size: 1rem;
+    font-weight: 500;
+    width: 6rem;
+    padding: 0.6rem;
+    margin: 1rem;
+    height: 26%;
+    background-color: #dc030f;
+    border: #dc030f;
+    color: white;
+    border-radius: 8px;
+}
+.background-containe{
+    background-image: url(background.jpg);
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: both;
+}
+.bg-overlay{
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+.hero-card{
+    position: absolute;
+    top:43%;
+    left: 15%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero-p{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.hero-h1{
+    font-size: 2.7rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+.membership > button{
+    background-color: #dc030f;
+    border: none;
+    outline: #dc030f;
+    color: white;
+    padding:1rem 4rem 1rem 4rem;
+    border-radius: 0.7rem;
+    font-weight: 300;
+    font-size: 2rem;
+    
+}
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.question,
+footer{
+    border-top: 1.3rem solid rgb(33, 32, 32);
+    padding: 15rem;
+}
+.card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 1rem 5rem 1rem 5rem;
+}
+
+.card-1>video{
+    padding-left: 5rem;
+    padding-right: 5.4rem;
+    position: relative;
+    width: 150%;
+    height: 60%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.card-1>img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.style-cards h1{
+    margin: 1rem 0.7rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.style-cards h3{
+    margin: 1rem 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.card-2{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 60%;
+    text-align: left;
+    align-items: center;
+    padding: 1rem 5rem 1rem 5rem;
+}
+.desc-2{
+    padding-left: 30%;
+}
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 1rem 5rem 1rem ;
+}
+.card-3>video{
+    position: relative;
+    top: -3.6rem;
+    left: 5.5rem;
+    width: 60%;
+    height: 190%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.card-3>img{
+    /* padding-left: 20rem; */
+    width: 100%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.desc-3{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.card-4{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 60%;
+    text-align: left;
+    align-items: center;
+    padding: 1rem 5rem 1rem 5rem;
+}
+.desc-4{
+    padding-left: 10%;
+}
+.question-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.question-container>h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.ques{
+    background-color: rgb(59, 58, 58);
+    width: 60rem;
+    padding: 1rem;
+    margin: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+    display: flex;
+    justify-content:space-between ;
+    /* padding: 3rem 1rem 1rem 3rem; */
+}
+.ques:hover{
+    background-color: rgb(98, 98, 98);
+}
+.ques >span {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.get-started{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.getstarted-mail{
+    margin: 1rem 0;
+}
+.getstarted-mail>.mail{
+background-color: transparent;
+color: #b0aeae;
+width: 25rem;
+height: 3.8rem;
+padding: 1rem;
+outline: none;
+border: 0.1rem solid #3c3c3c;
+border-radius: 0.2rem;
+font-size: 1rem;
+}
+.getstarted-mail >button{
+    background-color: #dc030f;
+    color: white;
+    outline: none;
+    padding: 1.03rem 3rem;
+    border: #dc030f;
+    border-radius: 0.3em;
+    font-size: 1rem;
+    font-weight:00;
+}
+footer{
+    /* margin-top: -1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b4b2b2;
+    padding: 5rem;
+}
+.footer-main{
+    display: flex;
+    flex-direction: column;
+    /* padding: 9rem; */
+    /* justify-content: space-around; */
+}
+.footer-sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h4>a,
+.sub1 > a,
+.sub2 > a,
+.sub3 > a,
+.sub4 > a{
+    text-decoration-color: #7c7c7c;
+    color: #d3cece;
+    margin: 1rem;
+}
+
+.sub1 > a,
+.sub2 > a,
+.sub3 > a,
+.sub4 > a{
+    padding: 0rem 2rem;
+    font-size: 0.8rem; 
+    display: inline-flex;
+    align-items: center;
+}
+.footer-main>h5{
+    padding: 1rem 0;
+}
